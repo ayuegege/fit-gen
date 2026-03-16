@@ -37,11 +37,8 @@ jobs:
         7z a -tzip ../FitGen-Windows.zip *
         cd ..
     
-    - name: Create Release
-      uses: softprops/action-gh-release@v2
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
       with:
-        files: FitGen-Windows.zip
-        generate_release_notes: true
-        name: FitGen Windows v${{ github.run_number }}
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        name: FitGen-Windows
+        path: FitGen-Windows.zip
