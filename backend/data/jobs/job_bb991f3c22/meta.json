@@ -1,0 +1,16 @@
+{
+  "job_id": "job_bb991f3c22",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45"
+  ],
+  "upload_count": 2,
+  "穿搭图_url": "/files/models/modelA/pose3.jpg",
+  "processed_count": 0,
+  "results": [
+    "/files/jobs/job_bb991f3c22/outputs/result_01.jpg"
+  ],
+  "created_at": 1773231999.578871,
+  "completed_at": 1773232012.0464275
+}

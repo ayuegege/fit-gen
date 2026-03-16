@@ -1,0 +1,17 @@
+{
+  "job_id": "job_73f4c5c670",
+  "status": "failed",
+  "mode": "product",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": null,
+  "product_image_url": "/files/models\\modelA\\耐克男鞋\\pose15.jpg",
+  "processed_count": 0,
+  "results": [],
+  "created_at": 1773241155.7900205,
+  "completed_at": 1773241158.0835724
+}

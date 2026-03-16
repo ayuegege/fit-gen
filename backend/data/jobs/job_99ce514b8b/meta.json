@@ -1,0 +1,25 @@
+{
+  "job_id": "job_99ce514b8b",
+  "model_id": "modelA",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "pose_count": 3,
+  "processed_count": 3,
+  "results": [
+    "/files/jobs/job_99ce514b8b/outputs/result_01.jpg",
+    "/files/jobs/job_99ce514b8b/outputs/result_02.jpg",
+    "/files/jobs/job_99ce514b8b/outputs/result_03.jpg"
+  ],
+  "created_at": 1773224904.2210488,
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ],
+  "completed_at": 1773224936.7316005
+}

@@ -1,0 +1,21 @@
+{
+  "job_id": "job_556de23f43",
+  "model_id": "modelA",
+  "status": "failed",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "pose_count": 3,
+  "processed_count": 3,
+  "results": [],
+  "created_at": 1773224089.7244124,
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ],
+  "completed_at": 1773224098.3628385
+}

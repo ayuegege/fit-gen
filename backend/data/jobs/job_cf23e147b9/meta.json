@@ -1,0 +1,17 @@
+{
+  "job_id": "job_cf23e147b9",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": "/files/models\\modelA\\男生ootd\\pose8.jpg",
+  "processed_count": 0,
+  "results": [
+    "/files/jobs/job_cf23e147b9/outputs/result_01.jpg"
+  ],
+  "created_at": 1773234793.425074,
+  "completed_at": 1773234804.8443918
+}

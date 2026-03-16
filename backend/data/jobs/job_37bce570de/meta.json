@@ -1,0 +1,16 @@
+{
+  "job_id": "job_37bce570de",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45"
+  ],
+  "upload_count": 2,
+  "穿搭图_url": "/files/models/modelA/pose.jpg",
+  "processed_count": 0,
+  "results": [
+    "/files/jobs/job_37bce570de/outputs/result_01.jpg"
+  ],
+  "created_at": 1773231548.3771431,
+  "completed_at": 1773231559.187029
+}

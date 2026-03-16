@@ -1,0 +1,15 @@
+{
+  "job_id": "job_2ae9390f57",
+  "status": "failed",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": "/files/models\\modelA\\男生ootd\\pose12.jpg",
+  "processed_count": 0,
+  "results": [],
+  "created_at": 1773237484.930143,
+  "error": "Cannot connect to host dashscope.aliyuncs.com:443 ssl:default [getaddrinfo failed]"
+}

@@ -1,0 +1,20 @@
+{
+  "job_id": "job_aba3121073",
+  "model_id": "modelA",
+  "status": "failed",
+  "uploaded_images": [
+    "shoe_side"
+  ],
+  "upload_count": 1,
+  "pose_count": 3,
+  "穿搭图_url": null,
+  "processed_count": 3,
+  "results": [],
+  "created_at": 1773226837.080081,
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ],
+  "completed_at": 1773226848.8339005
+}

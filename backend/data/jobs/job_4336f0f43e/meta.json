@@ -1,0 +1,25 @@
+{
+  "job_id": "job_4336f0f43e",
+  "model_id": "modelA",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45"
+  ],
+  "upload_count": 2,
+  "pose_count": 3,
+  "穿搭图_url": null,
+  "processed_count": 3,
+  "results": [
+    "/files/jobs/job_4336f0f43e/outputs/result_01.jpg",
+    "/files/jobs/job_4336f0f43e/outputs/result_02.jpg",
+    "/files/jobs/job_4336f0f43e/outputs/result_03.jpg"
+  ],
+  "created_at": 1773227188.688454,
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ],
+  "completed_at": 1773227233.016942
+}

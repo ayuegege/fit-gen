@@ -1,0 +1,17 @@
+{
+  "job_id": "job_b59ec24b35",
+  "status": "failed",
+  "mode": "fashion",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": "/files/models\\modelA\\男生ootd\\pose11.jpg",
+  "product_image_url": null,
+  "processed_count": 0,
+  "results": [],
+  "created_at": 1773320590.912533,
+  "completed_at": 1773320591.5476544
+}

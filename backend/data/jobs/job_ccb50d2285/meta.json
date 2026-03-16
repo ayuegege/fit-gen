@@ -1,0 +1,19 @@
+{
+  "job_id": "job_ccb50d2285",
+  "status": "done",
+  "mode": "fashion",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": "/files/models\\modelA\\男生ootd\\pose9.jpg",
+  "product_image_url": null,
+  "processed_count": 0,
+  "results": [
+    "/files/jobs/job_ccb50d2285/outputs/result_01.jpg"
+  ],
+  "created_at": 1773239585.1457322,
+  "completed_at": 1773239599.9334326
+}

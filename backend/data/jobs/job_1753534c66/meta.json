@@ -1,0 +1,19 @@
+{
+  "job_id": "job_1753534c66",
+  "model_id": "modelA",
+  "status": "processing",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45"
+  ],
+  "upload_count": 2,
+  "pose_count": 3,
+  "processed_count": 2,
+  "results": [],
+  "created_at": 1773221861.2060454,
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ]
+}

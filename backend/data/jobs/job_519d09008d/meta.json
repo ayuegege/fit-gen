@@ -1,0 +1,19 @@
+{
+  "job_id": "job_519d09008d",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side",
+    "shoe_45",
+    "shoe_top"
+  ],
+  "upload_count": 3,
+  "穿搭图_url": "/files/models\\modelA\\耐克男鞋\\pose3.jpg",
+  "processed_count": 0,
+  "results": [
+    "/files/jobs/job_519d09008d/outputs/result_01.jpg",
+    "/files/jobs/job_519d09008d/outputs/result_02.jpg",
+    "/files/jobs/job_519d09008d/outputs/result_03.jpg"
+  ],
+  "created_at": 1773237646.088096,
+  "completed_at": 1773237661.2702792
+}

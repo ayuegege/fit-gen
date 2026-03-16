@@ -1,0 +1,50 @@
+name: Build Windows EXE
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        pip install pyinstaller
+        pip install fastapi uvicorn streamlit aiohttp pillow requests pydantic starlette
+    
+    - name: Build EXE
+      run: pyinstaller FitGen_Windows.spec --clean
+    
+    - name: Upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: FitGen-Windows
+        path: dist/FitGen.exe
+    
+    - name: Create Release
+      if: github.event_name == 'push'
+      uses: softprops/action-gh-release@v1
+      with:
+        files: dist/FitGen.exe
+        tag_name: v${{ github.run_number }}
+        name: FitGen Windows Build ${{ github.run_number }}
+        body: |
+          黑潮AI定制系统 Windows 版本
+          
+          使用方法：
+          1. 下载 FitGen.exe
+          2. 双击运行
+          3. 自动打开浏览器访问 http://localhost:8501
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

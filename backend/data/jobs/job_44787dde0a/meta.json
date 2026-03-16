@@ -1,0 +1,17 @@
+{
+  "job_id": "job_44787dde0a",
+  "model_id": "modelA",
+  "status": "done",
+  "uploaded_images": [
+    "shoe_side"
+  ],
+  "upload_count": 1,
+  "pose_count": 3,
+  "processed_count": 3,
+  "results": [
+    "/files/jobs/job_44787dde0a/outputs/result_01.jpg",
+    "/files/jobs/job_44787dde0a/outputs/result_02.jpg",
+    "/files/jobs/job_44787dde0a/outputs/result_03.jpg"
+  ],
+  "created_at": 1773193869.1984537
+}

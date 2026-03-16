@@ -1,0 +1,21 @@
+{
+  "job_id": "job_84ec88bce8",
+  "model_id": "modelA",
+  "status": "failed",
+  "uploaded_images": [
+    "shoe_side"
+  ],
+  "upload_count": 1,
+  "pose_count": 3,
+  "results": [
+    "/files/jobs/job_84ec88bce8/outputs/result_01.jpg"
+  ],
+  "created_at": "1773156845.8490055",
+  "model_poses": [
+    "/files/models/modelA/pose.jpg",
+    "/files/models/modelA/pose3.jpg",
+    "/files/models/modelA/pose4.jpg"
+  ],
+  "progress": "1/3",
+  "error": "No module named 'PIL'"
+}
