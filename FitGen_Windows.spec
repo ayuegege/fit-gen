@@ -5,11 +5,10 @@ import os
 
 block_cipher = None
 
-# 获取项目路径
 project_path = os.path.abspath(os.path.dirname(SPECPATH))
 
 a = Analysis(
-    ['launcher.py'],
+    ['launcher_simple.py'],  # 使用简化版启动器
     pathex=[project_path],
     binaries=[],
     datas=[
@@ -30,7 +29,6 @@ a = Analysis(
         'pydantic',
         'starlette',
         'requests',
-        # Streamlit 依赖
         'streamlit.runtime',
         'streamlit.web.server',
         'altair',
