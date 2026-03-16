@@ -1,0 +1,47 @@
+# 黑潮AI定制系统 - FitGen 使用说明
+
+## 安装步骤
+
+### 1. 安装 Python
+
+下载并安装 Python 3.11 或更高版本：
+https://www.python.org/downloads/
+
+**重要：** 安装时勾选 "Add Python to PATH"
+
+### 2. 安装依赖
+
+双击运行 `install_dependencies.bat`，或者在命令行运行：
+```cmd
+pip install -r requirements.txt
+```
+
+## 使用方法
+
+双击 `FitGen.exe` 启动程序
+
+程序会：
+1. 自动启动后端服务
+2. 自动启动前端服务
+3. 自动打开浏览器
+
+访问 http://localhost:8501 使用系统
+
+## 停止程序
+
+在启动窗口中按 `Ctrl+C`
+
+## 常见问题
+
+### 提示 "找不到 Python"
+请先安装 Python 3.11+ 并添加到环境变量
+
+### 端口被占用
+确保 8000 和 8501 端口未被占用
+
+### 服务无法启动
+检查是否安装了所有依赖
+
+---
+
+支持：ayuegege

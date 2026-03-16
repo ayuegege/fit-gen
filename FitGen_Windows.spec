@@ -8,39 +8,23 @@ block_cipher = None
 project_path = os.path.abspath(os.path.dirname(SPECPATH))
 
 a = Analysis(
-    ['launcher_simple.py'],  # 使用简化版启动器
+    ['launcher.py'],  # 只打包启动器
     pathex=[project_path],
     binaries=[],
     datas=[
-        # 包含后端代码
-        ('backend/app.py', 'backend'),
-        ('backend/.env', 'backend'),
-        # 包含前端代码
-        ('frontend/app.py', 'frontend'),
-        # 包含静态文件
+        # 只包含必需的数据文件
         ('backend/files', 'backend/files'),
+        ('backend/.env', 'backend'),
     ],
-    hiddenimports=[
-        'fastapi',
-        'uvicorn',
-        'streamlit',
-        'aiohttp',
-        'PIL',
-        'pydantic',
-        'starlette',
-        'requests',
-        'streamlit.runtime',
-        'streamlit.web.server',
-        'altair',
-        'pandas',
-        'numpy',
-        'tornado',
-        'click',
-    ],
+    hiddenimports=[],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
-    excludes=['matplotlib', 'tkinter', 'PyQt5', 'PyQt6', 'PySide2', 'PySide6'],
+    excludes=[
+        # 排除不需要的模块
+        'matplotlib', 'tkinter', 'PyQt5', 'PyQt6', 'PySide2', 'PySide6',
+        'PIL', 'numpy', 'pandas',  # 不打包这些，让用户自己安装
+    ],
     win_no_prefer_redirects=False,
     win_private_assemblies=False,
     cipher=block_cipher,

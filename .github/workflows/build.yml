@@ -16,24 +16,32 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v4
     
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
-    
-    - name: Install dependencies
+    - name: Build EXE
       run: |
         pip install pyinstaller
-        pip install fastapi uvicorn streamlit aiohttp pillow requests pydantic starlette
-        pip install pandas numpy altair tornado click blinker cachetools
+        pyinstaller FitGen_Windows.spec --clean
     
-    - name: Build EXE
-      run: pyinstaller FitGen_Windows.spec --clean
+    - name: Create distribution package
+      run: |
+        mkdir FitGen-Package
+        copy dist\FitGen.exe FitGen-Package\
+        xcopy /E /I backend FitGen-Package\backend\
+        xcopy /E /I frontend FitGen-Package\frontend\
+        copy requirements.txt FitGen-Package\
+        copy install_dependencies.bat FitGen-Package\
+        copy 使用说明.txt FitGen-Package\
+    
+    - name: Zip package
+      run: |
+        cd FitGen-Package
+        7z a -tzip ../FitGen-Windows.zip *
+        cd ..
     
     - name: Create Release
       uses: softprops/action-gh-release@v2
       with:
-        files: dist/FitGen.exe
+        files: FitGen-Windows.zip
         generate_release_notes: true
+        name: FitGen Windows v${{ github.run_number }}
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
